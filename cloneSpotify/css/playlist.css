@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+  }
+  
+  body {
+    background: rgb(43, 43, 43);
+    min-height: 100vh;
+  }
+  
+  main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+  }
+  
+  /*Barra de scroll do mouse*/
+  ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: rgb(43, 43, 43);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: rgb(104, 104, 104);
+      border-radius: 1px;
+      transition: background 0.20s;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(150, 150, 150);
+      border-radius: 1px;
+    }
+  
+  .logo {
+      position: fixed;
+      width: 160px;
+      background-color: black;
+      padding-bottom: 900px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+  }
+  
+  .subtlist {
+    color: white;
+    position: fixed;
+    font-size: 25px;
+    background-color: rgb(20, 20, 20);
+    left: 160px;
+    top: 0px;
+    padding-left: 36px;
+    padding-right: 969px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-height: 60px;
+    white-space: nowrap;
+    padding-right: 1169px;
+  }
+
+  #pl1img {
+    background-color: rgb(43, 43, 43);
+    position: relative;
+    width: 250px;
+    left: 200px;
+    top: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    transition: background 0.5s;
+  }
+  
+  #pl1txt {
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    width: 800px;
+    left: 470px;
+    top: 210px;
+    transition: background 0.5s;
+  }
+  
+  #pl1play {
+    position: absolute;
+    background-color: rgb(101, 241, 93);
+    padding: 0.4%;
+    border-radius: 80px;
+    width: 70px;
+    left: 220px;
+    top: 390px;
+    opacity: 100%;
+    transition: 0.15s;
+  }
+
+  #pl1pause {
+    position: absolute;
+    background-color: rgb(101, 241, 93);
+    padding: 0.4%;
+    border-radius: 80px;
+    width: 70px;
+    left: 220px;
+    top: 290px;
+    opacity: 0%;
+    transition: 0.15s;
+  }
+
+  #audio1 {
+    position: absolute;
+    top: 400px;
+    left: 230px;
+    opacity: 0%;
+  }
+
+                                                    /* Primeira música*/
+  #music1 {
+    position: absolute;
+    width: 229px;
+    top: 520px;
+    left: 215px;
+    background-color: rgb(43, 43, 43);
+    padding-right: 12%;
+    border-radius: 5px;
+    transition: 0.10s;
+  }
+
+  #m1txt {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 525px;
+    left: 285px;
+  }
+
+  #m1autor {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    top: 555px;
+    left: 285px;
+  }
+
+  #pplay1 {
+    position: absolute;
+    width: 20px;
+    top: 540px;
+    left: 410px;
+    opacity: 100%;
+    filter: invert();
+    opacity: 0%;
+    transition: 0.10s;
+  }
+
+  /* Segunda música*/
+  #music2 {
+    position: absolute;
+    width: 229px;
+    top: 620px;
+    left: 215px;
+    background-color: rgb(43, 43, 43);
+    padding-right: 12%;
+    border-radius: 5px;
+    transition: 0.10s;
+  }
+
+  #m2txt {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 625px;
+    left: 285px;
+  }
+
+  #m2autor {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    top: 655px;
+    left: 285px;
+  }
+
+  #pplay2 {
+    position: absolute;
+    width: 20px;
+    top: 640px;
+    left: 410px;
+    filter: invert();
+    opacity: 0%;
+    transition: 0.10s;
+  }
+
+  /* Terceira música*/
+  #music3 {
+    position: absolute;
+    width: 229px;
+    top: 720px;
+    left: 215px;
+    background-color: rgb(43, 43, 43);
+    padding-right: 12%;
+    border-radius: 5px;
+    transition: 0.10s;
+  }
+
+  #m3txt {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 725px;
+    left: 285px;
+  }
+
+  #m3autor {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    top: 755px;
+    left: 285px;
+  }
+
+  #pplay3 {
+    position: absolute;
+    width: 20px;
+    top: 740px;
+    left: 410px;
+    filter: invert();
+    opacity: 0%;
+    transition: 0.10s;
+  }
+
+  /* Quarta música*/
+  #music4 {
+    position: absolute;
+    width: 229px;
+    top: 820px;
+    left: 215px;
+    background-color: rgb(43, 43, 43);
+    padding-right: 12%;
+    border-radius: 5px;
+    transition: 0.10s;
+  }
+
+  #m4txt {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 825px;
+    left: 285px;
+  }
+
+  #m4autor {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    top: 855px;
+    left: 285px;
+  }
+
+  #pplay4 {
+    position: absolute;
+    width: 20px;
+    top: 840px;
+    left: 410px;
+    filter: invert();
+    opacity: 0%;
+    transition: 0.10s;
+  }
+
+  /* Quinta música*/
+  #music5 {
+    position: absolute;
+    width: 229px;
+    top: 920px;
+    left: 215px;
+    background-color: rgb(43, 43, 43);
+    padding-right: 12%;
+    border-radius: 5px;
+    transition: 0.10s;
+  }
+
+  #m5txt {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 925px;
+    left: 285px;
+  }
+
+  #m5autor {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    top: 955px;
+    left: 285px;
+  }
+
+  #pplay5 {
+    position: absolute;
+    width: 20px;
+    top: 940px;
+    left: 410px;
+    filter: invert();
+    opacity: 0%;
+    transition: 0.10s;
+  }
+
+  #volume {
+    position: fixed;
+    top: 600px;
+    left: 1200px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: #ffffff;
+    border-radius: 160px;
+    height: 7px;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track:hover {
+    background: #16D800;
+    border-radius: 160px;
+    height: 7px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    background: #FFFFFF;
+    margin-top: -5.5px;
+  }

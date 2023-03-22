@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+body {
+  background: rgb(43, 43, 43);
+  min-height: 100vh;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+/*Barra de scroll do mouse*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(43, 43, 43);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(104, 104, 104);
+    border-radius: 1px;
+  }
+
+.logo {
+    position: fixed;
+    width: 160px;
+    background-color: black;
+    padding-bottom: 9000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.subtlist {
+  color: white;
+  position: fixed;
+  font-size: 25px;
+  background-color: rgb(20, 20, 20);
+  left: 160px;
+  top: 0px;
+  padding-left: 46px;
+  padding-right: 1169px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  max-height: 60px;
+  max-width: 1280px;
+  white-space: nowrap;
+}
+
+#pl1img {
+  background-color: rgb(40, 40, 40);
+  position: relative;
+  width: 200px;
+  left: 190px;
+  top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  transition: background 0.5s;
+}
+
+#pl1txt {
+  color: white;
+  font-size: 15px;
+  background-color: rgb(40, 40, 40);
+  position: absolute;
+  width: 200px;
+  left: 190px;
+  top: 280px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  transition: background 0.5s;
+}
+
+#pl1play {
+  position: absolute;
+  background-color: rgb(101, 241, 93);
+  padding: 0.4%;
+  border-radius: 36px;
+  width: 50px;
+  left: 325px;
+  top: 255px;
+  opacity: 0%;
+  transition: 0.35s;
+}
