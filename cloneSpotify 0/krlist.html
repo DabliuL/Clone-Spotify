@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="stylesheet" href="css\playlist.css">
+    <script src="./js/playlist.js"></script>
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+</head>
+<body>
+
+    <a href="spotify.html">
+    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo" class="logo">
+    </a>
+
+    <h6 class="subtlist">
+        Spotify Playlists
+    </h6>
+    
+        <img src="https://i.pinimg.com/736x/64/0a/f0/640af0ed2220a5b308b1bbc622d3fc47.jpg" alt="pl1img" id="pl1img">
+        <h6 id="pl1txt">
+            Kurolist
+        </h6>
+        <img src="https://cdn-icons-png.flaticon.com/512/0/375.png" onmouseleave="sair()" onclick="play()" onmousemove="mover()" alt="pl1play" id="pl1play">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/16/16427.png" onmouseleave="sair()" onclick="pause()" onmousemove="mover()" alt="pl1pause" id="pl1pause">
+
+        <audio id="audio1">
+            <source src="audio\littlegirl.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio id="audio2">
+            <source src="audio\hateyou.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio id="audio3">
+            <source src="audio\darkside.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio id="audio4">
+            <source src="audio\starwalkin.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio id="audio5">
+            <source src="audio\clarity.mp3" type="audio/mp3" />
+        </audio>
+
+        <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2735267d305c97a028a02c8a148" onmouseenter="entrar()" onmouseleave="sairm()" onclick="playm1()" alt="littlegirl" id="music1">
+            <h6 id="m1txt" onmouseenter="entrar()" onmouseleave="sairm()" onclick="playm1()" >
+                Little Girl
+            </h6>
+            <h6 id="m1autor" onmouseenter="entrar()" onmouseleave="sairm()" onclick="playm1()" >
+                Rosendale
+            </h6>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrar()" onmouseleave="sairm()" onclick="playm1()" alt="littlegirlplay" id="pplay1">
+        </div>
+
+        <div>
+            <img src="https://i1.sndcdn.com/artworks-aIJytT7FFJCg43Jz-qxsjLw-t500x500.jpg" onmouseenter="entrarm2()" onmouseleave="sairm2()" onclick="playm2()" alt="littlegirl" id="music2">
+            <h6 id="m2txt" onmouseenter="entrarm2()" onmouseleave="sairm2()" onclick="playm2()" >
+                Hate You
+            </h6>
+            <h6 id="m2autor" onmouseenter="entrarm2()" onmouseleave="sairm2()" onclick="playm2()" >
+                Jim Yosef x Riell
+            </h6>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrarm2()" onmouseleave="sairm2()" onclick="playm2()" alt="littlegirlplay" id="pplay2">
+        </div>
+
+        <div>
+            <img src="https://cdns-images.dzcdn.net/images/cover/6b9fa41f51607a9f43211a2ee5f55be7/500x500.jpg" onmouseenter="entrarm3()" onmouseleave="sairm3()" onclick="playm3()" alt="darkside" id="music3">
+            <h6 id="m3txt" onmouseenter="entrarm3()" onmouseleave="sairm3()" onclick="playm3()" >
+                Darkside
+            </h6>
+            <h6 id="m3autor" onmouseenter="entrarm3()" onmouseleave="sairm3()" onclick="playm3()" >
+                Alan Walker
+            </h6>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrarm3()" onmouseleave="sairm3()" onclick="playm3()" alt="darksideplay" id="pplay3">
+        </div>
+
+        <div>
+            <img src="https://images.genius.com/26cb0af76298aac1384f19061a5e9d2a.1000x1000x1.png" onmouseenter="entrarm4()" onmouseleave="sairm4()" onclick="playm4()" alt="starwalkin" id="music4">
+            <h6 id="m4txt" onmouseenter="entrarm4()" onmouseleave="sairm4()" onclick="playm4()" >
+                Star Walkin
+            </h6>
+            <h6 id="m4autor" onmouseenter="entrarm4()" onmouseleave="sairm4()" onclick="playm4()" >
+                Lil Nas X
+            </h6>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrarm4()" onmouseleave="sairm4()" onclick="playm4()" alt="starwalkinplay" id="pplay4">
+        </div>
+
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/3/3f/Zedd_-_Clarity_%28%C3%A1lbum%29.jpg" onmouseenter="entrarm5()" onmouseleave="sairm5()" onclick="playm5()" alt="clarity" id="music5">
+            <h6 id="m5txt" onmouseenter="entrarm5()" onmouseleave="sairm5()" onclick="playm5()" >
+                Clarity
+            </h6>
+            <h6 id="m5autor" onmouseenter="entrarm5()" onmouseleave="sairm5()" onclick="playm5()" >
+                Zedd
+            </h6>
+            <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrarm5()" onmouseleave="sairm5()" onclick="playm5()" alt="clarityplay" id="pplay5">
+        </div>
+
+        <input type="range" id="volume" min="0" value="0.9" max="1" step="0.1" onmousemove="volume()">
+</body>
+</html>
