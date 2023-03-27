@@ -18,12 +18,13 @@
     <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="logo" class="logo">
     </a>
 
-    
-    
         <img src="https://i.pinimg.com/736x/64/0a/f0/640af0ed2220a5b308b1bbc622d3fc47.jpg" alt="pl1img" id="pl1img">
         <h6 id="pl1txt">
             Batidões do WL
         </h6>
+
+        <img src="https://www.iconpacks.net/icons/1/free-heart-icon-492-thumb.png" onclick="heart()" alt="heart" id="heart">
+
         <img src="https://cdn-icons-png.flaticon.com/512/0/375.png" onmouseleave="sair()" onclick="play()" onmousemove="mover()" alt="pl1play" id="pl1play">
 
         <img src="https://cdn-icons-png.flaticon.com/512/16/16427.png" onmouseleave="sair()" onclick="pause()" onmousemove="mover()" alt="pl1pause" id="pl1pause">
@@ -103,10 +104,21 @@
             <img src="https://cdn-icons-png.flaticon.com/512/151/151860.png" onmouseenter="entrarm5()" onmouseleave="sairm5()" onclick="playm5()" alt="clarityplay" id="pplay5">
         </div>
 
-        <input type="range" id="volume" min="0" value="0.9" max="1" step="0.1" onmousemove="volume()">
-
         <h6 class="subtlist">
             Spotify Playlists
         </h6>
+
+        <div class="blackboard">
+
+            <input type="range" id="volume" min="0" value="1" max="1" step="0.1" onmousemove="volume()">
+
+            <img src="https://static.thenounproject.com/png/534333-200.png" onclick="back()"  alt="back" id="back">
+
+            <img src="https://static.thenounproject.com/png/534333-200.png" onclick="next()" alt="next" id="next">
+         </div>
+
+         <div id="ex">
+
+         </div>
 </body>
 </html>

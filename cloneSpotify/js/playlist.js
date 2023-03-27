@@ -1,5 +1,11 @@
 var music = 'audio1'
 
+function heart() {
+    var heart = window.document.getElementById('heart')
+    heart.style.backgroundColor = '#761496'
+
+}
+
 function playm1() {
     music = 'audio1'
     console.log(music)
@@ -218,5 +224,33 @@ function volume() {
     document.getElementById('audio3').volume = vol;
     document.getElementById('audio4').volume= vol;
     document.getElementById('audio5').volume= vol;
-
 }
+
+function next() {
+    if (music == 'audio1') {
+        playm2();
+    } else if (music == 'audio2') {
+        playm3();
+    } else if (music =='audio3') {
+        playm4();
+    } else if (music == 'audio4') {
+        playm5();
+    } else if (music == 'audio5') {
+        playm1();
+    }
+}
+
+function back() {
+    if (music == 'audio1') {
+        playm5();
+    } else if (music == 'audio2') {
+        playm1();
+    } else if (music == 'audio3') {
+        playm2();
+    } else if (music == 'audio4') {
+        playm3();
+    } else if (music == 'audio5') {
+        playm4();
+    }
+}
+
